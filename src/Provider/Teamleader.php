@@ -14,8 +14,8 @@ use Psr\Http\Message\ResponseInterface;
  */
 class Teamleader extends AbstractProvider
 {
-    private const OAUTH_BASE_URL = 'https://app.teamleader.eu/oauth2/';
-    private const API_BASE_URL = 'https://api.teamleader.eu/';
+    const OAUTH_BASE_URL = 'https://app.teamleader.eu/oauth2/';
+    const API_BASE_URL = 'https://api.teamleader.eu/';
 
     /**
      * @inheritdoc

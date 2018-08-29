@@ -19,8 +19,8 @@ class TeamleaderIdentityProviderException extends IdentityProviderException
      */
     public static function fromResponse(
         ResponseInterface $response,
-        string $message = ''
-    ): TeamleaderIdentityProviderException {
+        $message = ''
+    ) {
         return new static(
             $message,
             $response->getStatusCode(),
