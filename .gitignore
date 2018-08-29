@@ -1,0 +1,7 @@
+vendor/
+composer.lock
+index.php
+
+# IDEs
+.idea/
+.#*
