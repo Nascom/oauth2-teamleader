@@ -66,7 +66,7 @@ class Teamleader extends AbstractProvider
      */
     protected function checkResponse(ResponseInterface $response, $data)
     {
-        if ($response->getStatusCode() !== 200) {
+        if (!in_array($response->getStatusCode(), [200, 201, 204], true)) {
             throw TeamleaderIdentityProviderException::fromResponse($response);
         }
     }
